@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Kokoa Clone</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <!-- S : 상태바 -->
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+
+        <div class="status-bar__column">
+            <span>110%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+    <!-- E : 상태바 -->
+
+    <!-- S : header -->
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+        <p class="welcome-header__text">If you have a Kokoa Account, log in with your email or phone number.</p>
+    </header>
+    <!-- E : header -->
+
+    <!-- S : login form -->
+    <form id="login-form" action="friends.html" method="get">
+        <!--
+            - action: 어떤 페이지로 data를 보낼건지 지정
+            - method
+              1) post: 백엔드 서버에 정보를 전송하는 방식
+              2) get: 보안에 취약함, URL에 포함되어도 상관없는 정보들을 담고 있음
+        -->
+        <input type="text" name="username" placeholder="Email or phone number" />
+        <input type="password" name="password" placeholder="Password" />
+        <input type="submit" value="Log In" />
+
+        <a href="#">Find Kokoa Account or Password</a>
+    </form>
+    <!-- E : login form -->
+
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
+</html>
