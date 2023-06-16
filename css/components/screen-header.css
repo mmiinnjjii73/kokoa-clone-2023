@@ -1,3 +1,4 @@
-.screen-header {display:flex; justify-content:space-between; align-items:center; padding:var(--horizontal-space);}
+.screen-header {display:flex; justify-content:space-between; align-items:center; padding:var(--horizontal-space); margin-bottom:15px;}
 .screen-header__title {font-size:32px; font-weight:600;}
-.screen-header__icons span {margin-left:25px;}
+.screen-header__icons span {position:relative; margin-left:25px;}
+.screen-header__icons--new {position:absolute; left:18px; bottom:23px; background-color:tomato; border-radius:2px; width:4px; height:4px;}
