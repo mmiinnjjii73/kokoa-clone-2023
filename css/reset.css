@@ -52,4 +52,5 @@ input:focus {
 a {
     color: inherit;
     border: none;
+	text-decoration: none;
 }
