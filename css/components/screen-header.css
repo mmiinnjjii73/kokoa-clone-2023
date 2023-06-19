@@ -2,3 +2,14 @@
 .screen-header__title {font-size:32px; font-weight:600;}
 .screen-header__icons span {position:relative; margin-left:25px;}
 .screen-header__icons--new {position:absolute; left:18px; bottom:23px; background-color:tomato; border-radius:2px; width:4px; height:4px;}
+
+@keyframes rotateCog {
+    0% {
+        transform:none;
+    }
+    100% {
+        transform:rotateZ(360deg);
+    }
+}
+
+.screen-header__icons .fa-cog:hover {animation:rotateCog 1s linear infinite;}
