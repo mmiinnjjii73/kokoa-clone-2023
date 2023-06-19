@@ -1,1 +1,36 @@
-#chat-screen {background-color:#abc1d1;}
+#chat-screen {height:1000vh; background-color:#abc1d1;}
+#chat-screen .alt-header {position:fixed; width:100%; box-sizing:border-box; z-index:1;}
+#chat-screen .alt-header,
+#chat-screen .status-bar {background-color:#abc1d1;}
+#chat-screen .status-bar {z-index:2;}
+
+.main-chat {display:flex; flex-direction:column; align-items:center; margin-top:100px;}
+.chat__timestamp {color:#fff; font-size:14px; background-color:#92a4b2; padding:15px; margin-bottom:25px; border-radius:25px;}
+
+.message-row {display:flex; width:100%; margin-bottom:25px;}
+.message-row img {width:50px; height:50px; border-radius:50%; margin-right:10px;}
+.message__author {display:block; opacity:0.8; font-size:13px; margin-bottom:8px;}
+.message__info {display:flex; align-items:flex-end;}
+.message__bubble {font-size:18px; background-color:#fff; border-radius:15px; border-top-left-radius:0; padding:8px 13px; margin-right:5px;}
+.message__time {opacity:0.8; font-size:14px;}
+.message-row--own {justify-content:flex-end;}
+.message-row--own .message__bubble {background-color:var(--yellow); border-top-right-radius:0; border-top-left-radius:15px; margin-left:5px;}
+.message-row--own .message__info {flex-direction:row-reverse;}
+/*
+.message-row--own .message__bubble {order:1;}
+.message-row--own .message__time {order:0;}
+*/
+
+.reply {position:fixed; bottom:0; display:flex; justify-content:space-between; align-items:center; width:100%; background-color:#fff; padding:5px 25px; box-sizing:border-box;}
+.reply .reply__column {position:relative;}
+.reply .reply__column:first-child {width:10%;}
+.reply .reply__column:last-child {width:90%;}
+.reply .reply__column:last-child > i,
+.reply .reply__column:last-child button {position:absolute; top:3px; right:-20px;}
+.reply .reply__column:last-child > i {top:12px; right:25px;}
+.reply .reply__column:last-child button {width:35px; height:35px; border-radius:50%; background-color:var(--yellow); border:none;}
+.reply__column:last-child button:focus,
+.reply__column:last-child button:active {outline:none;}
+.reply .reply__column button i {opacity:1;}
+.reply input {width:100%; border:var(--main-border); border-radius:20px; padding:12px;}
+.reply i {opacity:0.5;}

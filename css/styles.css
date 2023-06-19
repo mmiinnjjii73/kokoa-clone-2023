@@ -19,5 +19,5 @@
 @import "screens/settings.css";
 @import "screens/chat.css";
 
-body {font-family: 'Open Sans', sans-serif; color:#2e363e;}
+body {font-family: 'Open Sans', sans-serif; color:#2e363e; padding-top:26px;}
 .main-screen {padding:0 var(--horizontal-space);}
